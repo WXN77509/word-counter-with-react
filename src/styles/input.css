@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Inter";
+  src: url("../font/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+@theme {
+  --color-reder: #e15a46;
+  --color-darker: rgba(255, 255, 255, 0.08);
+  --color-blacker: rgba(255, 255, 255, 0.56);
+  --font-Inter: "Inter";
+}
+
+.user-drag-none {
+  -webkit-user-drag: none;
+}
+
+.user-select-none {
+  user-select: none;
+}
