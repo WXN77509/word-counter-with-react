@@ -9,7 +9,7 @@ function Main() {
   const [numbersOfTextArea, setNumbersOfTextArea] = useState<number>(1);
 
   return (
-    <main className="flex flex-col md:flex-row gap-8 w-full h-screen max-w-[1240px] px-4">
+    <main className="flex flex-col md:flex-row gap-4 md:gap-8 w-full h-screen max-w-[1240px] px-4">
       <div className="w-full">
         <ul className="list-none m-0 p-0 flex flex-col gap-4">
           {Array.from({ length: numbersOfTextArea }, (_, index) => (

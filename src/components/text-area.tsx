@@ -71,7 +71,7 @@ function TextArea({
         {textArea !== "" && <DeleteButton setTextArea={setTextArea} />}
         {textArea !== "" && <CopyButton textArea={textArea} />}
       </div>
-      {id === "text-input-1" && (
+      {id === "text-input-1" && textArea && (
         <span className=" w-full inline-flex justify-center items-center gap-2 bg-[#191919] py-2 mt-4 rounded-md">
           <img
             src={errorIcon}
@@ -96,7 +96,9 @@ function TextArea({
           >
             Log in
           </a>
-          <p className="text-[13px]">to save your results. It’s free!</p>
+          <p className="hidden md:block text-[13px]">
+            to save your results. It’s free!
+          </p>
         </span>
       )}
     </>
